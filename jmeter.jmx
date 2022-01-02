@@ -1,0 +1,1309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.4.2">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread-Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig guiclass="com.googlecode.jmeter.plugins.webdriver.config.gui.ChromeDriverConfigGui" testclass="com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig" testname="jp@gc - Chrome Driver Config" enabled="true">
+          <stringProp name="WebDriverConfig.proxy_type">SYSTEM</stringProp>
+          <stringProp name="WebDriverConfig.proxy_pac_url"></stringProp>
+          <stringProp name="WebDriverConfig.http_host"></stringProp>
+          <intProp name="WebDriverConfig.http_port">8080</intProp>
+          <boolProp name="WebDriverConfig.use_http_for_all_protocols">true</boolProp>
+          <stringProp name="WebDriverConfig.https_host"></stringProp>
+          <intProp name="WebDriverConfig.https_port">8080</intProp>
+          <stringProp name="WebDriverConfig.ftp_host"></stringProp>
+          <intProp name="WebDriverConfig.ftp_port">8080</intProp>
+          <stringProp name="WebDriverConfig.socks_host"></stringProp>
+          <intProp name="WebDriverConfig.socks_port">8080</intProp>
+          <stringProp name="WebDriverConfig.no_proxy">localhost</stringProp>
+          <boolProp name="WebDriverConfig.maximize_browser">true</boolProp>
+          <boolProp name="WebDriverConfig.reset_per_iteration">false</boolProp>
+          <boolProp name="WebDriverConfig.dev_mode">false</boolProp>
+          <stringProp name="ChromeDriverConfig.chromedriver_path">C:\chromedriver.exe</stringProp>
+          <boolProp name="ChromeDriverConfig.android_enabled">false</boolProp>
+          <boolProp name="ChromeDriverConfig.headless_enabled">false</boolProp>
+          <boolProp name="ChromeDriverConfig.insecurecerts_enabled">false</boolProp>
+          <boolProp name="ChromeDriverConfig.incognito_enabled">true</boolProp>
+          <boolProp name="ChromeDriverConfig.no_sandbox_enabled">false</boolProp>
+        </com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig>
+        <hashTree/>
+        <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Sampler - VistaRooms Home Page" enabled="true">
+          <stringProp name="WebDriverSampler.script">import java.io.File;
+import org.apache.commons.io.FileUtils;
+import java.util.Random;
+import openqa.selenium.OutputType.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.support.ui.*;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.interactions.Actions;
+
+WDS.sampleResult.sampleStart();  
+WDS.browser.get(&quot;https://www.vistarooms.com/&quot;); 
+WebDriverWait wait = new WebDriverWait(WDS.browser, 30); // explicit wait
+ 
+if(wait.until(ExpectedConditions.visibilityOfElementLocated
+(By.xpath(&quot;//div[@class=&apos;row search-form&apos;]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+if(wait.until(ExpectedConditions.presenceOfElementLocated
+(By.xpath(&quot;//div[@id=&apos;carouselExampleControls&apos;]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+  
+if(wait.until(ExpectedConditions.presenceOfElementLocated
+(By.xpath(&quot;//div[@class=&apos;owl-item active&apos;][1]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+WDS.sampleResult.sampleEnd();</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">java</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import java.io.*;
+
+FileWriter fw=new FileWriter(&quot;E:\\vista\\testResult.csv&quot;,true);
+BufferedWriter bw=new BufferedWriter(fw);
+var rc = prev.getResponseCode();
+var rm = prev.getResponseMessage();
+
+log.info(&quot;&quot;+rc+&quot;&quot;);
+
+log.info(&quot;Response Time is: &quot; + prev.getTime().toString());
+var rt = prev.getTime().toString();
+log.info(&quot;&quot;+rt+&quot;&quot;);
+
+if(rc.equals(&quot;200&quot;)){
+	bw.newLine();
+	bw.newLine();
+ bw.write(&quot;SCRIPTNAME&quot; + &quot;,&quot; + &quot;RESPONSECODE&quot; + &quot;,&quot; + &quot;RESPONSEMESSAGE&quot; + &quot;,&quot; + &quot;LOADTIME&quot;);
+ bw.newLine();
+ bw.write(&quot;MAINPAGE&quot; + &quot;,&quot;+rc+&quot;&quot; + &quot;,&quot;+rm+&quot;&quot; +  &quot;,&quot;+rt+&quot;&quot;);
+}
+else{
+bw.newLine();
+bw.write(&quot;MAINPAGE&quot; + &quot;,&quot;+rc+&quot;&quot; + &quot;,&quot; + &quot;FAILED&quot; +  &quot;,&quot;+rt+&quot;&quot;);
+}
+bw.close();
+fw.close();</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Sampler - VistaRooms Search Page" enabled="true">
+          <stringProp name="WebDriverSampler.script">import java.io.File;
+import org.apache.commons.io.FileUtils;
+import java.util.Random;
+import openqa.selenium.OutputType.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.support.ui.*;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.interactions.Actions;
+
+WDS.sampleResult.sampleStart();  
+WDS.browser.get(&quot;https://www.vistarooms.com/search?city=mumbai,%20maharashtra&amp;adult=1&amp;child=0&quot;); 
+WebDriverWait wait = new WebDriverWait(WDS.browser, 30); // explicit wait
+
+if(wait.until(ExpectedConditions.visibilityOfElementLocated
+(By.xpath(&quot;//div[@class=&apos;ng-star-inserted&apos;]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+if(wait.until(ExpectedConditions.presenceOfElementLocated
+(By.xpath(&quot;//div[@class=&apos;col-4 m-b-35 ng-star-inserted&apos;][1]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+if(wait.until(ExpectedConditions.presenceOfElementLocated
+(By.xpath(&quot;//div[@class=&apos;font-a-m text-black&apos;]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+WDS.sampleResult.sampleEnd();</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">java</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import java.io.*;
+
+FileWriter fw=new FileWriter(&quot;E:\\vista\\testResult.csv&quot;,true);
+BufferedWriter bw=new BufferedWriter(fw);
+var rc = prev.getResponseCode();
+var rm = prev.getResponseMessage();
+
+log.info(&quot;&quot;+rc+&quot;&quot;);
+
+log.info(&quot;Response Time is: &quot; + prev.getTime().toString());
+var rt = prev.getTime().toString();
+log.info(&quot;&quot;+rt+&quot;&quot;);
+
+if(rc.equals(&quot;200&quot;)){
+	
+ bw.newLine();
+ bw.write(&quot;Search Page&quot; + &quot;,&quot;+rc+&quot;&quot; + &quot;,&quot;+rm+&quot;&quot; +  &quot;,&quot;+rt+&quot;&quot;);
+}
+else{
+bw.newLine();
+bw.write(&quot;Search Page&quot; + &quot;,&quot;+rc+&quot;&quot; + &quot;,&quot; + &quot;FAILED&quot; +  &quot;,&quot;+rt+&quot;&quot;);
+}
+bw.close();
+fw.close();</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Sampler - VistaRooms City Page" enabled="true">
+          <stringProp name="WebDriverSampler.script">import java.io.File;
+import org.apache.commons.io.FileUtils;
+import java.util.Random;
+import openqa.selenium.OutputType.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.support.ui.*;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.interactions.Actions;
+
+WDS.sampleResult.sampleStart();  
+WDS.browser.get(&quot;https://www.vistarooms.com/kerala/villas-in-alleppey&quot;); 
+WebDriverWait wait = new WebDriverWait(WDS.browser, 30); // explicit wait
+ 
+if(wait.until(ExpectedConditions.visibilityOfElementLocated
+(By.xpath(&quot;//div[@class=&apos;ng-star-inserted&apos;]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+if(wait.until(ExpectedConditions.presenceOfElementLocated
+(By.xpath(&quot;//div[@class=&apos;col-4 m-b-35 ng-star-inserted&apos;][1]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+  
+if(wait.until(ExpectedConditions.presenceOfElementLocated
+(By.xpath(&quot;//h6[@class=&apos;p1-16-redhat-medium mt-4 pt-4&apos;]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+WDS.sampleResult.sampleEnd();</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">java</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import java.io.*;
+
+FileWriter fw=new FileWriter(&quot;E:\\vista\\testResult.csv&quot;,true);
+BufferedWriter bw=new BufferedWriter(fw);
+var rc = prev.getResponseCode();
+var rm = prev.getResponseMessage();
+
+log.info(&quot;&quot;+rc+&quot;&quot;);
+
+log.info(&quot;Response Time is: &quot; + prev.getTime().toString());
+var rt = prev.getTime().toString();
+log.info(&quot;&quot;+rt+&quot;&quot;);
+
+if(rc.equals(&quot;200&quot;)){
+	
+ bw.newLine();
+ bw.write(&quot;City Page&quot; + &quot;,&quot;+rc+&quot;&quot; + &quot;,&quot;+rm+&quot;&quot; +  &quot;,&quot;+rt+&quot;&quot;);
+}
+else{
+bw.newLine();
+bw.write(&quot;City Page&quot; + &quot;,&quot;+rc+&quot;&quot; + &quot;,&quot; + &quot;FAILED&quot; +  &quot;,&quot;+rt+&quot;&quot;);
+}
+bw.close();
+fw.close();</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Sampler - VistaRooms Product Page" enabled="true">
+          <stringProp name="WebDriverSampler.script">import java.io.File;
+import org.apache.commons.io.FileUtils;
+import java.util.Random;
+import openqa.selenium.OutputType.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.support.ui.*;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.interactions.Actions;
+
+WDS.sampleResult.sampleStart();  
+WDS.browser.get(&quot;https://www.vistarooms.com/villa/nayonash-villa?adult=1&amp;child=0&quot;); 
+WebDriverWait wait = new WebDriverWait(WDS.browser, 30); // explicit wait
+ 
+if(wait.until(ExpectedConditions.visibilityOfElementLocated
+(By.xpath(&quot;//div[@id=&apos;property-gallery&apos;]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+if(wait.until(ExpectedConditions.presenceOfElementLocated
+(By.xpath(&quot;//div[@class=&apos;col-10&apos;]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+  
+if(wait.until(ExpectedConditions.presenceOfElementLocated
+(By.xpath(&quot;//div[@class=&apos;col-sm-12 col-md-12 col-lg-12&apos;]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+if(wait.until(ExpectedConditions.presenceOfElementLocated
+(By.xpath(&quot;//h3[@class=&apos;tab font-30 font-a-b text-black&apos;]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+WDS.sampleResult.sampleEnd();</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">java</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import java.io.*;
+
+FileWriter fw=new FileWriter(&quot;E:\\vista\\testResult.csv&quot;,true);
+BufferedWriter bw=new BufferedWriter(fw);
+var rc = prev.getResponseCode();
+var rm = prev.getResponseMessage();
+
+log.info(&quot;&quot;+rc+&quot;&quot;);
+
+log.info(&quot;Response Time is: &quot; + prev.getTime().toString());
+var rt = prev.getTime().toString();
+log.info(&quot;&quot;+rt+&quot;&quot;);
+
+if(rc.equals(&quot;200&quot;)){
+	
+ bw.newLine();
+ bw.write(&quot;Product Page&quot; + &quot;,&quot;+rc+&quot;&quot; + &quot;,&quot;+rm+&quot;&quot; +  &quot;,&quot;+rt+&quot;&quot;);
+}
+else{
+bw.newLine();
+bw.write(&quot;Product Page&quot; + &quot;,&quot;+rc+&quot;&quot; + &quot;,&quot; + &quot;FAILED&quot; +  &quot;,&quot;+rt+&quot;&quot;);
+}
+bw.close();
+fw.close();</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Sampler - VistaRooms Checkout Page" enabled="true">
+          <stringProp name="WebDriverSampler.script">import java.io.File;
+import org.apache.commons.io.FileUtils;
+import java.util.Random;
+import openqa.selenium.OutputType.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.support.ui.*;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.interactions.Actions;
+
+WDS.sampleResult.sampleStart();  
+WDS.browser.get(&quot;https://www.vistarooms.com/&quot;); 
+WebDriverWait wait = new WebDriverWait(WDS.browser, 30); // explicit wait
+ 
+if(wait.until(ExpectedConditions.visibilityOfElementLocated
+(By.xpath(&quot;//div[@class=&apos;row search-form&apos;]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+if(wait.until(ExpectedConditions.presenceOfElementLocated
+(By.xpath(&quot;//div[@id=&apos;carouselExampleControls&apos;]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+  
+if(wait.until(ExpectedConditions.presenceOfElementLocated
+(By.xpath(&quot;//div[@class=&apos;owl-item active&apos;][1]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+WDS.sampleResult.sampleEnd();</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">java</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import java.io.*;
+
+FileWriter fw=new FileWriter(&quot;E:\\vista\\testResult.csv&quot;,true);
+BufferedWriter bw=new BufferedWriter(fw);
+var rc = prev.getResponseCode();
+var rm = prev.getResponseMessage();
+
+log.info(&quot;&quot;+rc+&quot;&quot;);
+
+log.info(&quot;Response Time is: &quot; + prev.getTime().toString());
+var rt = prev.getTime().toString();
+log.info(&quot;&quot;+rt+&quot;&quot;);
+
+if(rc.equals(&quot;200&quot;)){
+	
+ bw.newLine();
+ bw.write(&quot;Checkout Page&quot; + &quot;,&quot;+rc+&quot;&quot; + &quot;,&quot;+rm+&quot;&quot; +  &quot;,&quot;+rt+&quot;&quot;);
+}
+else{
+bw.newLine();
+bw.write(&quot;Checkout Page&quot; + &quot;,&quot;+rc+&quot;&quot; + &quot;,&quot; + &quot;FAILED&quot; +  &quot;,&quot;+rt+&quot;&quot;);
+}
+bw.close();
+fw.close();</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Sampler - Airbnb Home Page" enabled="true">
+          <stringProp name="WebDriverSampler.script">import java.io.File;
+import org.apache.commons.io.FileUtils;
+import java.util.Random;
+import openqa.selenium.OutputType.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.support.ui.*;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.interactions.Actions;
+
+WDS.sampleResult.sampleStart();  
+WDS.browser.get(&quot;https://www.airbnb.co.in/&quot;); 
+WebDriverWait wait = new WebDriverWait(WDS.browser, 30); // explicit wait
+ 
+if(wait.until(ExpectedConditions.visibilityOfElementLocated
+(By.xpath(&quot;(//span[@class=&apos;_uf64g5&apos;])[2]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+if(wait.until(ExpectedConditions.presenceOfElementLocated
+(By.xpath(&quot;(//span[@class=&apos;_expepa&apos;][normalize-space()=&apos;Inspiration for your next trip&apos;])[5]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+  
+if(wait.until(ExpectedConditions.presenceOfElementLocated
+(By.xpath(&quot;(//span[@class=&apos;_y9cbsa&apos;])[8]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+WDS.sampleResult.sampleEnd();</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">java</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import java.io.*;
+
+FileWriter fw=new FileWriter(&quot;E:\\vista\\testResult.csv&quot;,true);
+BufferedWriter bw=new BufferedWriter(fw);
+var rc = prev.getResponseCode();
+var rm = prev.getResponseMessage();
+
+log.info(&quot;&quot;+rc+&quot;&quot;);
+
+log.info(&quot;Response Time is: &quot; + prev.getTime().toString());
+var rt = prev.getTime().toString();
+log.info(&quot;&quot;+rt+&quot;&quot;);
+
+if(rc.equals(&quot;200&quot;)){
+	
+ bw.newLine();
+ bw.write(&quot;Airbnb HomePage&quot; + &quot;,&quot;+rc+&quot;&quot; + &quot;,&quot;+rm+&quot;&quot; +  &quot;,&quot;+rt+&quot;&quot;);
+}
+else{
+bw.newLine();
+bw.write(&quot;Airbnb HomePage&quot; + &quot;,&quot;+rc+&quot;&quot; + &quot;,&quot; + &quot;FAILED&quot; +  &quot;,&quot;+rt+&quot;&quot;);
+}
+bw.close();
+fw.close();</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Sampler - Airbnb Collection Page" enabled="true">
+          <stringProp name="WebDriverSampler.script">import java.io.File;
+import org.apache.commons.io.FileUtils;
+import java.util.Random;
+import openqa.selenium.OutputType.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.support.ui.*;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.interactions.Actions;
+
+WDS.sampleResult.sampleStart();  
+WDS.browser.get(&quot;https://www.airbnb.co.in/s/Calangute/homes?place_id=ChIJ9Vm7fePBvzsRhscxtxGXD50&amp;refinement_paths%5B%5D=%2Fhomes&amp;search_type=section_navigation&quot;); 
+WebDriverWait wait = new WebDriverWait(WDS.browser, 30); // explicit wait
+ 
+if(wait.until(ExpectedConditions.visibilityOfElementLocated
+(By.xpath(&quot;//div[@class=&apos;_1aese7c&apos;]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+if(wait.until(ExpectedConditions.presenceOfElementLocated
+(By.xpath(&quot;(//a[@class=&apos;l1axmu71 dir dir-ltr&apos;])[1]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+  
+if(wait.until(ExpectedConditions.presenceOfElementLocated
+(By.xpath(&quot;//div[@class=&apos;_1gax70a&apos;]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+WDS.sampleResult.sampleEnd();</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">java</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import java.io.*;
+
+FileWriter fw=new FileWriter(&quot;E:\\vista\\testResult.csv&quot;,true);
+BufferedWriter bw=new BufferedWriter(fw);
+var rc = prev.getResponseCode();
+var rm = prev.getResponseMessage();
+
+log.info(&quot;&quot;+rc+&quot;&quot;);
+
+log.info(&quot;Response Time is: &quot; + prev.getTime().toString());
+var rt = prev.getTime().toString();
+log.info(&quot;&quot;+rt+&quot;&quot;);
+
+if(rc.equals(&quot;200&quot;)){
+	
+ bw.newLine();
+ bw.write(&quot;Airbnb Collection Page&quot; + &quot;,&quot;+rc+&quot;&quot; + &quot;,&quot;+rm+&quot;&quot; +  &quot;,&quot;+rt+&quot;&quot;);
+}
+else{
+bw.newLine();
+bw.write(&quot;Airbnb Collection Page&quot; + &quot;,&quot;+rc+&quot;&quot; + &quot;,&quot; + &quot;FAILED&quot; +  &quot;,&quot;+rt+&quot;&quot;);
+}
+bw.close();
+fw.close();</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Sampler - Airbnb Search Page" enabled="true">
+          <stringProp name="WebDriverSampler.script">import java.io.File;
+import org.apache.commons.io.FileUtils;
+import java.util.Random;
+import openqa.selenium.OutputType.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.support.ui.*;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.interactions.Actions;
+
+WDS.sampleResult.sampleStart();  
+WDS.browser.get(&quot;https://www.airbnb.co.in/s/Goa/homes?tab_id=home_tab&amp;refinement_paths%5B%5D=%2Fhomes&amp;flexible_trip_dates%5B%5D=december&amp;flexible_trip_dates%5B%5D=november&amp;flexible_trip_lengths%5B%5D=weekend_trip&amp;date_picker_type=calendar&amp;query=Goa&amp;place_id=ChIJQbc2YxC6vzsRkkDzYv-H-Oo&amp;checkin=2022-11-24&amp;checkout=2022-11-25&amp;adults=4&amp;children=1&amp;source=structured_search_input_header&amp;search_type=autocomplete_click&quot;); 
+WebDriverWait wait = new WebDriverWait(WDS.browser, 30); // explicit wait
+ 
+if(wait.until(ExpectedConditions.visibilityOfElementLocated
+(By.xpath(&quot;//div[@class=&apos;_1aese7c&apos;]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+if(wait.until(ExpectedConditions.presenceOfElementLocated
+(By.xpath(&quot;(//a[@class=&apos;l1axmu71 dir dir-ltr&apos;])[1]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+  
+if(wait.until(ExpectedConditions.presenceOfElementLocated
+(By.xpath(&quot;(//a[@class=&apos;_15tommw&apos;])[20]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+WDS.sampleResult.sampleEnd();</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">java</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import java.io.*;
+
+FileWriter fw=new FileWriter(&quot;E:\\vista\\testResult.csv&quot;,true);
+BufferedWriter bw=new BufferedWriter(fw);
+var rc = prev.getResponseCode();
+var rm = prev.getResponseMessage();
+
+log.info(&quot;&quot;+rc+&quot;&quot;);
+
+log.info(&quot;Response Time is: &quot; + prev.getTime().toString());
+var rt = prev.getTime().toString();
+log.info(&quot;&quot;+rt+&quot;&quot;);
+
+if(rc.equals(&quot;200&quot;)){
+	
+ bw.newLine();
+ bw.write(&quot;Airbnb Search Page&quot; + &quot;,&quot;+rc+&quot;&quot; + &quot;,&quot;+rm+&quot;&quot; +  &quot;,&quot;+rt+&quot;&quot;);
+}
+else{
+bw.newLine();
+bw.write(&quot;Airbnb Search Page&quot; + &quot;,&quot;+rc+&quot;&quot; + &quot;,&quot; + &quot;FAILED&quot; +  &quot;,&quot;+rt+&quot;&quot;);
+}
+bw.close();
+fw.close();</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Sampler - Airbnb Product Page" enabled="true">
+          <stringProp name="WebDriverSampler.script">import java.io.File;
+import org.apache.commons.io.FileUtils;
+import java.util.Random;
+import openqa.selenium.OutputType.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.support.ui.*;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.interactions.Actions;
+
+WDS.sampleResult.sampleStart();  
+WDS.browser.get(&quot;https://www.airbnb.co.in/rooms/48128162?category_tag=Tag%3A8188&amp;adults=1&amp;check_in=2022-09-01&amp;check_out=2022-09-08&amp;federated_search_id=865607f1-fb01-40c4-9f5c-262a209254ab&amp;source_impression_id=p3_1640069254_uKkPp5ss%2FBdobHqX&amp;guests=1&quot;); 
+WebDriverWait wait = new WebDriverWait(WDS.browser, 30); // explicit wait
+
+if(wait.until(ExpectedConditions.visibilityOfElementLocated
+(By.xpath(&quot;//div[@class=&apos;_1aese7c&apos;]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+ if(wait.until(ExpectedConditions.presenceOfElementLocated
+(By.xpath(&quot;//span[@class=&apos;_1n81at5&apos;]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+if(wait.until(ExpectedConditions.presenceOfElementLocated
+(By.xpath(&quot;//div[@class=&apos;_xcsyj0&apos;]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+if(wait.until(ExpectedConditions.presenceOfElementLocated
+(By.xpath(&quot;//button[@class=&apos;_fk5gnzv&apos;]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+WDS.sampleResult.sampleEnd();</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">java</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import java.io.*;
+
+FileWriter fw=new FileWriter(&quot;E:\\vista\\testResult.csv&quot;,true);
+BufferedWriter bw=new BufferedWriter(fw);
+var rc = prev.getResponseCode();
+var rm = prev.getResponseMessage();
+
+log.info(&quot;&quot;+rc+&quot;&quot;);
+
+log.info(&quot;Response Time is: &quot; + prev.getTime().toString());
+var rt = prev.getTime().toString();
+log.info(&quot;&quot;+rt+&quot;&quot;);
+
+if(rc.equals(&quot;200&quot;)){
+	
+ bw.newLine();
+ bw.write(&quot;Airbnb Product Page&quot; + &quot;,&quot;+rc+&quot;&quot; + &quot;,&quot;+rm+&quot;&quot; +  &quot;,&quot;+rt+&quot;&quot;);
+}
+else{
+bw.newLine();
+bw.write(&quot;Airbnb Product Page&quot; + &quot;,&quot;+rc+&quot;&quot; + &quot;,&quot; + &quot;FAILED&quot; +  &quot;,&quot;+rt+&quot;&quot;);
+}
+bw.close();
+fw.close();</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Sampler - Airbnb Checkout Page" enabled="true">
+          <stringProp name="WebDriverSampler.script">import java.io.File;
+import org.apache.commons.io.FileUtils;
+import java.util.Random;
+import openqa.selenium.OutputType.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.support.ui.*;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.interactions.Actions;
+
+WDS.sampleResult.sampleStart();  
+WDS.browser.get(&quot;https://www.airbnb.co.in/book/stays/32853159?numberOfAdults=1&amp;numberOfGuests=1&amp;checkin=2022-07-29&amp;checkout=2022-07-31&amp;guestCurrency=INR&amp;productId=32853159&amp;isWorkTrip=false&amp;numberOfChildren=0&amp;numberOfInfants=0&amp;numberOfPets=0&quot;); 
+WebDriverWait wait = new WebDriverWait(WDS.browser, 30); // explicit wait
+ 
+if(wait.until(ExpectedConditions.visibilityOfElementLocated
+(By.xpath(&quot;//h1[normalize-space()=&apos;Confirm and pay&apos;]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+if(wait.until(ExpectedConditions.presenceOfElementLocated
+(By.xpath(&quot;//h3[@class=&apos;_1qfgcw8&apos;]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+if(wait.until(ExpectedConditions.presenceOfElementLocated
+(By.xpath(&quot;//h2[normalize-space()=&apos;Price details&apos;]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);   
+}
+
+WDS.sampleResult.sampleEnd();</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">java</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import java.io.*;
+
+FileWriter fw=new FileWriter(&quot;E:\\vista\\testResult.csv&quot;,true);
+BufferedWriter bw=new BufferedWriter(fw);
+var rc = prev.getResponseCode();
+var rm = prev.getResponseMessage();
+
+log.info(&quot;&quot;+rc+&quot;&quot;);
+
+log.info(&quot;Response Time is: &quot; + prev.getTime().toString());
+var rt = prev.getTime().toString();
+log.info(&quot;&quot;+rt+&quot;&quot;);
+
+if(rc.equals(&quot;200&quot;)){
+	
+ bw.newLine();
+ bw.write(&quot;Airbnb Checkout Page&quot; + &quot;,&quot;+rc+&quot;&quot; + &quot;,&quot;+rm+&quot;&quot; +  &quot;,&quot;+rt+&quot;&quot;);
+}
+else{
+bw.newLine();
+bw.write(&quot;Airbnb Checkout Page&quot; + &quot;,&quot;+rc+&quot;&quot; + &quot;,&quot; + &quot;FAILED&quot; +  &quot;,&quot;+rt+&quot;&quot;);
+}
+bw.close();
+fw.close();</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Sampler - VistaRooms Search See More" enabled="true">
+          <stringProp name="WebDriverSampler.script">import java.io.File;
+import org.apache.commons.io.FileUtils;
+import java.util.Random;
+import openqa.selenium.OutputType.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.support.ui.*;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.interactions.Actions;
+
+WDS.sampleResult.sampleStart();  
+WDS.browser.get(&quot;https://www.vistarooms.com/&quot;); 
+WebDriverWait wait = new WebDriverWait(WDS.browser, 30); // explicit wait
+ 
+if(wait.until(ExpectedConditions.visibilityOfElementLocated
+(By.xpath(&quot;//div[@class=&apos;row search-form&apos;]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+if(wait.until(ExpectedConditions.presenceOfElementLocated
+(By.xpath(&quot;//div[@class=&apos;search-container&apos;]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+WebElement searchBox = WDS.browser.findElement(By.xpath(&quot;//div[@class=&apos;search-container&apos;]&quot;));
+searchBox.click();
+
+WebElement cityName =   WDS.browser.findElement(By.xpath(&quot;//ul[@id=&apos;menu&apos;]/li[3]&quot;));
+cityName.click();
+
+WDS.browser.findElement(By.xpath(&quot;(//div[@class=&apos;form-group&apos;]/input[@id=&apos;date-range&apos;])[1]&quot;)).click();
+WDS.browser.findElement(By.xpath(&quot;(//div[@class=&apos;bs-datepicker-head&apos;]//following::td[11])[1]&quot;)).click();
+WDS.browser.findElement(By.xpath(&quot;(//div[@class=&apos;bs-datepicker-head&apos;]//following::td[14])[1]&quot;)).click();
+
+WDS.browser.findElement(By.xpath(&quot;//button[.=&apos;SEARCH&apos;]&quot;)).click();
+
+if(wait.until(ExpectedConditions.presenceOfElementLocated
+(By.xpath(&quot;//button[.=&apos;See More&apos;]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+WebElement seeMore = WDS.browser.findElement(By.xpath(&quot;//button[.=&apos;See More&apos;]&quot;));
+seeMore.click();
+
+if(wait.until(ExpectedConditions.presenceOfElementLocated
+(By.xpath(&quot;//div[@class=&apos;col-4 m-b-35 ng-star-inserted&apos;][25]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+if(wait.until(ExpectedConditions.presenceOfElementLocated
+(By.xpath(&quot;//button[.=&apos;See More&apos;]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+WDS.sampleResult.sampleEnd();</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">java</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import java.io.*;
+
+FileWriter fw=new FileWriter(&quot;E:\\vista\\testResult.csv&quot;,true);
+BufferedWriter bw=new BufferedWriter(fw);
+var rc = prev.getResponseCode();
+var rm = prev.getResponseMessage();
+
+log.info(&quot;&quot;+rc+&quot;&quot;);
+
+log.info(&quot;Response Time is: &quot; + prev.getTime().toString());
+var rt = prev.getTime().toString();
+log.info(&quot;&quot;+rt+&quot;&quot;);
+
+if(rc.equals(&quot;200&quot;)){
+	
+ bw.newLine();
+ bw.write(&quot;Search See More&quot; + &quot;,&quot;+rc+&quot;&quot; + &quot;,&quot;+rm+&quot;&quot; +  &quot;,&quot;+rt+&quot;&quot;);
+}
+else{
+bw.newLine();
+bw.write(&quot;Search See More&quot; + &quot;,&quot;+rc+&quot;&quot; + &quot;,&quot; + &quot;FAILED&quot; +  &quot;,&quot;+rt+&quot;&quot;);
+}
+bw.close();
+fw.close();</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Sampler - VistaRooms Guest Filter" enabled="true">
+          <stringProp name="WebDriverSampler.script">import java.io.File;
+import org.apache.commons.io.FileUtils;
+import java.util.Random;
+import openqa.selenium.OutputType.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.support.ui.*;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.interactions.Actions;
+
+WDS.sampleResult.sampleStart();  
+WDS.browser.get(&quot;https://www.vistarooms.com/search?city=pune,%20maharashtra&amp;adult=1&amp;child=0&quot;); 
+WebDriverWait wait = new WebDriverWait(WDS.browser, 30); // explicit wait
+
+if(wait.until(ExpectedConditions.visibilityOfElementLocated
+(By.xpath(&quot;//button[@class=&apos;btn btn-vista-red-outline font-18 w-100 guest-btn dropdown-toggle text-align-start&apos;]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+WDS.browser.findElement(By.xpath(&quot;//div[@class=&apos;px-1 col-3&apos;]/input&quot;)).click();
+WDS.browser.findElement(By.xpath(&quot;(//button[@class=&apos;next&apos;])[1]&quot;)).click();
+WDS.browser.findElement(By.xpath(&quot;(//div[@class=&apos;bs-datepicker-head&apos;]//following::td[12])[1]&quot;)).click();
+WDS.browser.findElement(By.xpath(&quot;(//div[@class=&apos;bs-datepicker-head&apos;]//following::td[15])[1]&quot;)).click();
+ 
+if(wait.until(ExpectedConditions.visibilityOfElementLocated
+(By.xpath(&quot;//button[@class=&apos;btn btn-vista-red-outline font-18 w-100 guest-btn dropdown-toggle text-align-start&apos;]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+WDS.browser.findElement(By.xpath(&quot;//button[@class=&apos;btn btn-vista-red-outline font-18 w-100 guest-btn dropdown-toggle text-align-start&apos;]&quot;)).click();
+
+int guestCount = 10 ;
+for(int i=1; i&lt;=guestCount;i++){
+WDS.browser.findElement(By.xpath(&quot;(//input[@type=&apos;button&apos;])[2]&quot;)).click();
+}
+
+WDS.browser.findElement(By.xpath(&quot;(//a[.=&apos;Apply&apos;])[1]&quot;)).click();
+
+if(wait.until(ExpectedConditions.presenceOfElementLocated
+(By.xpath(&quot;(//div[@class=&apos;card mt-3 prop_card ng-star-inserted&apos;])[4]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+WDS.sampleResult.sampleEnd();</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">java</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import java.io.*;
+
+FileWriter fw=new FileWriter(&quot;E:\\vista\\testResult.csv&quot;,true);
+BufferedWriter bw=new BufferedWriter(fw);
+var rc = prev.getResponseCode();
+var rm = prev.getResponseMessage();
+
+log.info(&quot;&quot;+rc+&quot;&quot;);
+
+log.info(&quot;Response Time is: &quot; + prev.getTime().toString());
+var rt = prev.getTime().toString();
+log.info(&quot;&quot;+rt+&quot;&quot;);
+
+if(rc.equals(&quot;200&quot;)){
+	
+ bw.newLine();
+ bw.write(&quot;Guest Filter&quot; + &quot;,&quot;+rc+&quot;&quot; + &quot;,&quot;+rm+&quot;&quot; +  &quot;,&quot;+rt+&quot;&quot;);
+}
+else{
+bw.newLine();
+bw.write(&quot;Guest Filter&quot; + &quot;,&quot;+rc+&quot;&quot; + &quot;,&quot; + &quot;FAILED&quot; +  &quot;,&quot;+rt+&quot;&quot;);
+}
+bw.close();
+fw.close();</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Sampler - VistaRooms Filter Page" enabled="true">
+          <stringProp name="WebDriverSampler.script">import java.io.File;
+import org.apache.commons.io.FileUtils;
+import java.util.Random;
+import openqa.selenium.OutputType.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.support.ui.*;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.interactions.Actions;
+
+WDS.sampleResult.sampleStart();  
+WDS.browser.get(&quot;https://www.vistarooms.com/search?city=pune,%20maharashtra&amp;adult=1&amp;child=0&quot;); 
+WebDriverWait wait = new WebDriverWait(WDS.browser, 30); // explicit wait
+ 
+if(wait.until(ExpectedConditions.visibilityOfElementLocated
+(By.xpath(&quot;//button[@class=&apos;btn btn-vista-red-outline font-18 w-100 guest-btn dropdown-toggle text-align-start&apos;]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+WDS.browser.findElement(By.xpath(&quot;//div[@class=&apos;px-1 col-3&apos;]/input&quot;)).click();
+WDS.browser.findElement(By.xpath(&quot;(//button[@class=&apos;next&apos;])[1]&quot;)).click();
+WDS.browser.findElement(By.xpath(&quot;(//div[@class=&apos;bs-datepicker-head&apos;]//following::td[17])[1]&quot;)).click();
+WDS.browser.findElement(By.xpath(&quot;(//div[@class=&apos;bs-datepicker-head&apos;]//following::td[18])[1]&quot;)).click();
+
+WDS.browser.findElement(By.xpath(&quot;//button[.=&apos;Filters &apos;]&quot;)).click();
+
+if(wait.until(ExpectedConditions.visibilityOfElementLocated
+(By.xpath(&quot;(//span[@class=&apos;vista-checkbox-checkmark&apos;])[5]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+WDS.browser.findElement(By.xpath(&quot;(//span[@class=&apos;vista-checkbox-checkmark&apos;])[5]&quot;)).click();     
+WDS.browser.findElement(By.xpath(&quot;//button[.=&apos;APPLY FILTERS&apos;]&quot;)).click();
+
+if(wait.until(ExpectedConditions.presenceOfElementLocated
+(By.xpath(&quot;(//img[@class=&apos;ng-star-inserted&apos;])[1]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+if(wait.until(ExpectedConditions.presenceOfElementLocated
+(By.xpath(&quot;//div[@class=&apos;luxury-patch&apos;]//following::div[.=&apos; Paashaan W/ Heated Pool + All Meals Incl - Khopoli&apos;]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+WDS.sampleResult.sampleEnd();</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">java</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import java.io.*;
+
+FileWriter fw=new FileWriter(&quot;E:\\vista\\testResult.csv&quot;,true);
+BufferedWriter bw=new BufferedWriter(fw);
+var rc = prev.getResponseCode();
+var rm = prev.getResponseMessage();
+
+log.info(&quot;&quot;+rc+&quot;&quot;);
+
+log.info(&quot;Response Time is: &quot; + prev.getTime().toString());
+var rt = prev.getTime().toString();
+log.info(&quot;&quot;+rt+&quot;&quot;);
+
+if(rc.equals(&quot;200&quot;)){
+	
+ bw.newLine();
+ bw.write(&quot;Filter Page&quot; + &quot;,&quot;+rc+&quot;&quot; + &quot;,&quot;+rm+&quot;&quot; +  &quot;,&quot;+rt+&quot;&quot;);
+}
+else{
+bw.newLine();
+bw.write(&quot;Filter Page&quot; + &quot;,&quot;+rc+&quot;&quot; + &quot;,&quot; + &quot;FAILED&quot; +  &quot;,&quot;+rt+&quot;&quot;);
+}
+bw.close();
+fw.close();</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Sampler - VistaRooms Many Filter Page" enabled="true">
+          <stringProp name="WebDriverSampler.script">import java.io.File;
+import org.apache.commons.io.FileUtils;
+import java.util.Random;
+import openqa.selenium.OutputType.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.support.ui.*;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.interactions.Actions;
+
+WDS.sampleResult.sampleStart();  
+WDS.browser.get(&quot;https://www.vistarooms.com/search?city=pune,%20maharashtra&amp;adult=1&amp;child=0&quot;); 
+WebDriverWait wait = new WebDriverWait(WDS.browser, 30); // explicit wait
+ 
+if(wait.until(ExpectedConditions.visibilityOfElementLocated
+(By.xpath(&quot;//button[@class=&apos;btn btn-vista-red-outline font-18 w-100 guest-btn dropdown-toggle text-align-start&apos;]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+WDS.browser.findElement(By.xpath(&quot;//div[@class=&apos;px-1 col-3&apos;]/input&quot;)).click();
+WDS.browser.findElement(By.xpath(&quot;(//button[@class=&apos;next&apos;])[1]&quot;)).click();
+WDS.browser.findElement(By.xpath(&quot;(//div[@class=&apos;bs-datepicker-head&apos;]//following::td[17])[1]&quot;)).click();
+WDS.browser.findElement(By.xpath(&quot;(//div[@class=&apos;bs-datepicker-head&apos;]//following::td[18])[1]&quot;)).click();
+
+WDS.browser.findElement(By.xpath(&quot;//button[.=&apos;Filters &apos;]&quot;)).click();
+
+if(wait.until(ExpectedConditions.visibilityOfElementLocated
+(By.xpath(&quot;(//span[@class=&apos;vista-checkbox-checkmark&apos;])[5]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+WDS.browser.findElement(By.xpath(&quot;(//span[@class=&apos;vista-checkbox-checkmark&apos;])[5]&quot;)).click(); 
+WDS.browser.findElement(By.xpath(&quot;(//span[@class=&apos;vista-checkbox-checkmark&apos;])[2]&quot;)).click();    
+WDS.browser.findElement(By.xpath(&quot;(//span[@class=&apos;vista-checkbox-checkmark&apos;])[3]&quot;)).click();     
+WDS.browser.findElement(By.xpath(&quot;//button[.=&apos;APPLY FILTERS&apos;]&quot;)).click();
+
+if(wait.until(ExpectedConditions.presenceOfElementLocated
+(By.xpath(&quot;//h1[@class=&apos;h2-26-redhat-bold text-capitalize&apos;]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+if(wait.until(ExpectedConditions.presenceOfElementLocated
+(By.xpath(&quot;(//div[@class=&apos;col-4 m-b-35 ng-star-inserted&apos;])[3]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+WDS.sampleResult.sampleEnd();</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">java</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import java.io.*;
+
+FileWriter fw=new FileWriter(&quot;E:\\vista\\testResult.csv&quot;,true);
+BufferedWriter bw=new BufferedWriter(fw);
+var rc = prev.getResponseCode();
+var rm = prev.getResponseMessage();
+
+log.info(&quot;&quot;+rc+&quot;&quot;);
+
+log.info(&quot;Response Time is: &quot; + prev.getTime().toString());
+var rt = prev.getTime().toString();
+log.info(&quot;&quot;+rt+&quot;&quot;);
+
+if(rc.equals(&quot;200&quot;)){
+	
+ bw.newLine();
+ bw.write(&quot;Many Filter Page&quot; + &quot;,&quot;+rc+&quot;&quot; + &quot;,&quot;+rm+&quot;&quot; +  &quot;,&quot;+rt+&quot;&quot;);
+}
+else{
+bw.newLine();
+bw.write(&quot;Many Filter Page&quot; + &quot;,&quot;+rc+&quot;&quot; + &quot;,&quot; + &quot;FAILED&quot; +  &quot;,&quot;+rt+&quot;&quot;);
+}
+bw.close();
+fw.close();</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Sampler - VistaRooms Luxury Banner" enabled="true">
+          <stringProp name="WebDriverSampler.script">import java.io.File;
+import org.apache.commons.io.FileUtils;
+import java.util.Random;
+import openqa.selenium.OutputType.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.support.ui.*;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.interactions.Actions;
+import java.util.ArrayList;
+
+WDS.sampleResult.sampleStart();  
+WDS.browser.get(&quot;https://www.vistarooms.com/&quot;); 
+WebDriverWait wait = new WebDriverWait(WDS.browser, 30); // explicit wait
+
+if(wait.until(ExpectedConditions.visibilityOfElementLocated
+(By.xpath(&quot;//div[@class=&apos;row search-form&apos;]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+if(wait.until(ExpectedConditions.visibilityOfElementLocated
+(By.xpath(&quot;//div[@class=&apos;search-container&apos;]/input&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+WebElement searchBox = WDS.browser.findElement(By.xpath(&quot;//div[@class=&apos;search-container&apos;]/input&quot;));
+searchBox.click();
+
+WebElement cityName = WDS.browser.findElement(By.xpath(&quot;//ul[@id=&apos;menu&apos;]/li[2]/a&quot;));
+cityName.click();
+
+if(wait.until(ExpectedConditions.visibilityOfElementLocated
+(By.xpath(&quot;(//div[@class=&apos;form-group&apos;]/input[@id=&apos;date-range&apos;])[1]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+WDS.browser.findElement(By.xpath(&quot;(//div[@class=&apos;form-group&apos;]/input[@id=&apos;date-range&apos;])[1]&quot;)).click();
+WDS.browser.findElement(By.xpath(&quot;(//button[@class=&apos;next&apos;])[1]&quot;)).click();
+WDS.browser.findElement(By.xpath(&quot;(//div[@class=&apos;bs-datepicker-head&apos;]//following::td[11])[1]&quot;)).click();
+WDS.browser.findElement(By.xpath(&quot;(//div[@class=&apos;bs-datepicker-head&apos;]//following::td[14])[1]&quot;)).click();
+
+WDS.browser.findElement(By.xpath(&quot;//button[.=&apos;SEARCH&apos;]&quot;)).click();    
+   
+if(wait.until(ExpectedConditions.visibilityOfElementLocated
+(By.xpath(&quot;//div[@class=&apos;col-12&apos;]/a&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+WDS.browser.findElement(By.xpath(&quot;//div[@class=&apos;col-12&apos;]/a&quot;)).click();  
+ 
+ArrayList tabs = new ArrayList(); 
+tabs.addAll(WDS.browser.getWindowHandles());
+String tab = WDS.browser.getWindowHandle();
+WDS.log.info(&quot;Tabs: &quot; + tabs + &quot; current: &quot; + tab + &quot; Size of tabs: &quot; + tabs.size());
+WDS.browser.switchTo().window(tabs.get(tabs.size() - 1));
+
+ 
+if(wait.until(ExpectedConditions.presenceOfElementLocated
+(By.xpath(&quot;//div[@class=&apos;luxury-patch&apos;]//following::div[.=&apos; Paashaan W/ Heated Pool + All Meals Incl - Khopoli&apos;]&quot;))).isDisplayed() != true) {
+    WDS.sampleResult.setSuccessful(false);
+}
+
+WDS.sampleResult.sampleEnd();</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">java</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import java.io.*;
+
+FileWriter fw=new FileWriter(&quot;E:\\vista\\testResult.csv&quot;,true);
+BufferedWriter bw=new BufferedWriter(fw);
+var rc = prev.getResponseCode();
+var rm = prev.getResponseMessage();
+
+log.info(&quot;&quot;+rc+&quot;&quot;);
+
+log.info(&quot;Response Time is: &quot; + prev.getTime().toString());
+var rt = prev.getTime().toString();
+log.info(&quot;&quot;+rt+&quot;&quot;);
+
+if(rc.equals(&quot;200&quot;)){
+	
+ bw.newLine();
+ bw.write(&quot;Luxury Banner&quot; + &quot;,&quot;+rc+&quot;&quot; + &quot;,&quot;+rm+&quot;&quot; +  &quot;,&quot;+rt+&quot;&quot;);
+}
+else{
+bw.newLine();
+bw.write(&quot;Luxury Banner&quot; + &quot;,&quot;+rc+&quot;&quot; + &quot;,&quot; + &quot;FAILED&quot; +  &quot;,&quot;+rt+&quot;&quot;);
+
+}
+bw.close();
+fw.close();</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
